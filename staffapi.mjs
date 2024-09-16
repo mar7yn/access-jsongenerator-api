@@ -8,8 +8,10 @@ import path, { dirname } from 'path'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const ORIGIN_URL = process.env.ORIGIN_URL
+
 const app = express();
-app.use(cors({ origin: "https://access-jsongenerator-1.onrender.com" }));
+app.use(cors({ origin: ORIGIN_URL }));
 app.options('*', cors())
 
 jotform.options({
@@ -22,6 +24,7 @@ jotform.options({
  * Returns raw JSON from jotform
  */
 app.get("/api", async (req, res) => {
+  console.log(ORIGIN_URL)
   const forms = await jotform.getForms({ limit:60 });
   const staffForm = forms.find(form => form.title == 'ACCESS Staff Database');
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
