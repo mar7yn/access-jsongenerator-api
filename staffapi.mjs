@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-app.use(cors({ origin: [ "https://access-jsongenerator.onrender.com" ] }));
+app.use(cors({ origin: [ "https://access-jsongenerator-1.onrender.com" ] }));
 
 jotform.options({
   apiKey: process.env.JOTFORM_API,
