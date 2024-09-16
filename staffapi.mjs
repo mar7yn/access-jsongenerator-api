@@ -24,7 +24,6 @@ jotform.options({
  * Returns raw JSON from jotform
  */
 app.get("/api", async (req, res) => {
-  console.log(ORIGIN_URL)
   const forms = await jotform.getForms({ limit:60 });
   const staffForm = forms.find(form => form.title == 'ACCESS Staff Database');
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
