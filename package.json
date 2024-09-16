@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.4.1",
+    "@wojtekmaj/jotform": "^1.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jotform": "^1.0.1",
+    "nodemon": "^3.1.4"
+  },
+  "name": "jotform",
+  "version": "1.0.0",
+  "main": "staffAPI.mjs",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node staffapi.mjs",
+    "dev": "nodemon staffapi.mjs",
+    "debug": "nodemon --inspect staffapi.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
