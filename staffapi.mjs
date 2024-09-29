@@ -33,31 +33,40 @@ app.get("/api", async (req, res) => {
     return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber')
   })
 
+  // const staffSubmissionsArray = submissions.map(person => {
+  //   console.log(person.answers)
+  //   return Object.values(person.answers).filter(f =>  {
+  //     if (f.name == 'activeAccess') {
+  //       if (f.answer == '1') {
+  //         return f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber'
+  //       } else {
+  //         return null
+  //       }
+  //     }
+  //   })
+  // })
+
   let outputBuilder = []
+
 
   staffSubmissionsArray.forEach(subArray => {
     let personObj = {}
     subArray.forEach(obj => {
       if (obj.name == 'name') {
         personObj['name'] = obj.prettyFormat
-      }
-      if (obj.name == 'nhsEmail') {
+      } if (obj.name == 'nhsEmail') {
         personObj['email'] = obj.answer
-      }
-      if (obj.name == 'jobRole') {
+      } if (obj.name == 'jobRole') {
         personObj['jobRole'] = obj.prettyFormat
-      }
-      if (obj.name == 'nokName') {
+      } if (obj.name == 'nokName') {
         personObj['nokName'] = obj.answer
-      }
-      if (obj.name == 'nokNumber') {
+      } if (obj.name == 'nokNumber') {
         personObj['nokNumber'] = obj.answer
-      }
-      if (obj.name == 'registrationNumber') {
+      } if (obj.name == 'registrationNumber') {
         personObj['registrationNumber'] = obj.answer
       }
-      outputBuilder.push(personObj)
     })
+    outputBuilder.push(personObj)
   })
 
 
