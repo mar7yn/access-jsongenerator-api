@@ -29,20 +29,41 @@ app.get("/api", async (req, res) => {
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
   
   const staffSubmissionsArray = submissions.map(person => {
-    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole')
+    console.log(person.answers)
+    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber')
   })
 
-  const output = staffSubmissionsArray.map(item => {
-    return {
-      name: item[0].prettyFormat,
-      email: item[1].answer,
-      jobRole: item[2].prettyFormat,
-    }
+  let outputBuilder = []
+
+  staffSubmissionsArray.forEach(subArray => {
+    let personObj = {}
+    subArray.forEach(obj => {
+      if (obj.name == 'name') {
+        personObj['name'] = obj.prettyFormat
+      }
+      if (obj.name == 'nhsEmail') {
+        personObj['email'] = obj.answer
+      }
+      if (obj.name == 'jobRole') {
+        personObj['jobRole'] = obj.prettyFormat
+      }
+      if (obj.name == 'nokName') {
+        personObj['nokName'] = obj.answer
+      }
+      if (obj.name == 'nokNumber') {
+        personObj['nokNumber'] = obj.answer
+      }
+      if (obj.name == 'registrationNumber') {
+        personObj['registrationNumber'] = obj.answer
+      }
+      outputBuilder.push(personObj)
+    })
   })
+
 
   const filePath = path.join(__dirname, "staff.json")
 
-  await writeFile(filePath, JSON.stringify({ "LIST" : [...output] }), (err) => {
+  await writeFile(filePath, JSON.stringify({ "LIST" : outputBuilder }), (err) => {
     if (err) {
       console.log("Error writing file: ", err)
       return
