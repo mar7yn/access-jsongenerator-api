@@ -29,25 +29,10 @@ app.get("/api", async (req, res) => {
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
   
   const staffSubmissionsArray = submissions.map(person => {
-    console.log(person.answers)
-    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber')
+    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess')
   })
 
-  // const staffSubmissionsArray = submissions.map(person => {
-  //   console.log(person.answers)
-  //   return Object.values(person.answers).filter(f =>  {
-  //     if (f.name == 'activeAccess') {
-  //       if (f.answer == '1') {
-  //         return f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber'
-  //       } else {
-  //         return null
-  //       }
-  //     }
-  //   })
-  // })
-
   let outputBuilder = []
-
 
   staffSubmissionsArray.forEach(subArray => {
     let personObj = {}
@@ -64,15 +49,28 @@ app.get("/api", async (req, res) => {
         personObj['nokNumber'] = obj.answer
       } if (obj.name == 'registrationNumber') {
         personObj['registrationNumber'] = obj.answer
+      } if (obj.name == 'activeAccess') {
+        personObj['activeAccess'] = obj.answer
       }
     })
     outputBuilder.push(personObj)
   })
 
+  const activeUsers = outputBuilder.filter(person => {
+    if (person.activeAccess === '1') {
+      return {
+        name: person.name,
+        email: person.email,
+        nokName: person.nokName,
+        jobRole: person.jobRole,
+        nokNumber: person.nokNumber
+      }
+    }
+  })
 
   const filePath = path.join(__dirname, "staff.json")
 
-  await writeFile(filePath, JSON.stringify({ "LIST" : outputBuilder }), (err) => {
+  await writeFile(filePath, JSON.stringify({ "LIST" : activeUsers }), (err) => {
     if (err) {
       console.log("Error writing file: ", err)
       return
@@ -90,7 +88,6 @@ app.get("/api", async (req, res) => {
   }).catch(err => {
     console.log('Something went wrong...', err)
   })
-
 })
 
 app.listen(3001, () => {
