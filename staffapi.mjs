@@ -56,15 +56,13 @@ app.get("/api", async (req, res) => {
     outputBuilder.push(personObj)
   })
 
-  const activeUsers = outputBuilder.filter(person => {
-    if (person.activeAccess === '1') {
-      return {
-        name: person.name,
-        email: person.email,
-        nokName: person.nokName,
-        jobRole: person.jobRole,
-        nokNumber: person.nokNumber
-      }
+  const activeUsers = outputBuilder.filter(person => person.activeAccess === '1').map(person => {
+    return {
+      name: person.name,
+      email: person.email,
+      nokName: person.nokName,
+      jobRole: person.jobRole,
+      nokNumber: person.nokNumber
     }
   })
 
