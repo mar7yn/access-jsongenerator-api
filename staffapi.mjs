@@ -29,8 +29,10 @@ app.get("/api", async (req, res) => {
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
   
   const staffSubmissionsArray = submissions.map(person => {
-    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess')
+    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess' || f.name === 'registrationNumber' || f.name === 'phoneNumber')
   })
+
+  console.log(JSON.stringify(staffSubmissionsArray))
 
   let outputBuilder = []
 
@@ -51,6 +53,10 @@ app.get("/api", async (req, res) => {
         personObj['registrationNumber'] = obj.answer
       } if (obj.name == 'activeAccess') {
         personObj['activeAccess'] = obj.answer
+      } if (obj.name == 'phoneNumber') {
+        personObj['phoneNumber'] = obj.answer
+      } if (obj.name === 'registrationNumber') {
+        personObj['registrationNumber'] = obj.answer
       }
     })
     outputBuilder.push(personObj)
@@ -58,11 +64,13 @@ app.get("/api", async (req, res) => {
 
   const activeUsers = outputBuilder.filter(person => person.activeAccess === '1').map(person => {
     return {
+      registrationNumber: person.registrationNumber,
       name: person.name,
       email: person.email,
       nokName: person.nokName,
       jobRole: person.jobRole,
-      nokNumber: person.nokNumber
+      nokNumber: person.nokNumber,
+      phoneNumber: person.phoneNumber
     }
   })
 
