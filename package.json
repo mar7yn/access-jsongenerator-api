@@ -11,13 +11,14 @@
   },
   "name": "jotform",
   "version": "1.0.0",
-  "main": "staffAPI.mjs",
+  "type": "module",
+  "main": "api.mjs",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node staffapi.mjs",
-    "dev": "nodemon staffapi.mjs",
-    "debug": "nodemon --inspect staffapi.mjs"
+    "start": "node api.mjs",
+    "dev": "nodemon api.mjs",
+    "debug": "nodemon --inspect api.mjs"
   },
   "keywords": [],
   "author": "",

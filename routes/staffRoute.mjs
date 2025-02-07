@@ -1,29 +1,13 @@
 import jotform from '@wojtekmaj/jotform';
-import express from 'express';
-import cors from 'cors';
-import 'dotenv/config'
 import { writeFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+import express from 'express'
+const router = express.Router()
 
-const ORIGIN_URL = process.env.ORIGIN_URL
-
-const app = express();
-app.use(cors({ origin: ORIGIN_URL }));
-app.options('*', cors())
-
-jotform.options({
-  apiKey: process.env.JOTFORM_API,
-  url: "https://eu-api.jotform.com"
-})
-
-/**
- * GET request for /api
- * Returns raw JSON from jotform
- */
-app.get("/api", async (req, res) => {
+router.get("/staff", async (req, res) => {
   const forms = await jotform.getForms({ limit:60 });
   const staffForm = forms.find(form => form.title == 'ACCESS Staff Database');
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
@@ -32,9 +16,9 @@ app.get("/api", async (req, res) => {
     return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess' || f.name === 'registrationNumber' || f.name === 'phoneNumber')
   })
 
-  console.log(JSON.stringify(staffSubmissionsArray))
-
   let outputBuilder = []
+
+  //TODO all staff members are built whether they are active or not. Should the active check be done first?
 
   staffSubmissionsArray.forEach(subArray => {
     let personObj = {}
@@ -96,6 +80,4 @@ app.get("/api", async (req, res) => {
   })
 })
 
-app.listen(3001, () => {
-  console.log(`Server listening on port 3001... yay`)
-})
+export default router
