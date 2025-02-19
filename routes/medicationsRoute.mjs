@@ -67,15 +67,10 @@ router.get('/medications', async (req, res) => {
       }
     })
 
-    if (drugType == 'drugs-cds') {
-      if (infObj.controlledDrug == 'y') {
+    if (drugType == 'cds') {
+      if (infObj.controlledDrug == 'Yes') {
         outputBuilder.push(infObj)
       }
-    } else if (!infObj.medicationType16.includes(drugType)) {
-      return
-    } else {
-      delete infObj.medicationType16
-      outputBuilder.push(infObj)
     }
   })
 
