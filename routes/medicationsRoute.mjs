@@ -67,10 +67,8 @@ router.get('/medications', async (req, res) => {
       }
     })
 
-    if (drugType == 'cds') {
-      if (infObj.controlledDrug == 'Yes') {
-        outputBuilder.push(infObj)
-      }
+    if (drugType == 'cds' && infObj.controlledDrug == 'Yes') {
+       outputBuilder.push(infObj)
     }
   })
 
