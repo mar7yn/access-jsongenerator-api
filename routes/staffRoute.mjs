@@ -2,6 +2,7 @@ import jotform from '@wojtekmaj/jotform';
 import { writeFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path'
+import staffTemplate from '../utilities/staffTemplate.mjs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 import express from 'express'
@@ -60,7 +61,7 @@ router.get("/staff", async (req, res) => {
 
   const filePath = path.join(__dirname, "staff.json")
 
-  await writeFile(filePath, JSON.stringify({ "LIST" : activeUsers }), (err) => {
+  await writeFile(filePath, JSON.stringify({ "LIST" : [staffTemplate, ...activeUsers] }), (err) => {
     if (err) {
       console.log("Error writing file: ", err)
       return
