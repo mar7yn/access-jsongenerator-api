@@ -2,6 +2,7 @@ import jotform from '@wojtekmaj/jotform';
 import { writeFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path'
+import medicationTemplate from '../utilities/medicationTemplate.mjs'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 import express from 'express'
@@ -78,7 +79,7 @@ router.get('/medications', async (req, res) => {
 
   const filePath = path.join(__dirname, `${drugType}.json`)
 
-  await writeFile(filePath, JSON.stringify({ "LIST" : outputBuilder }), (err) => {
+  await writeFile(filePath, JSON.stringify({ "LIST" : [medicationTemplate, ...outputBuilder] }), (err) => {
     if (err) {
       console.log("Error writing file: ", err)
       return
