@@ -2,7 +2,7 @@ import jotform from '@wojtekmaj/jotform';
 import { writeFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path'
-import hospitalTemplate from '../utilities/template.mjs'
+import hospitalTemplate from '../utilities/hospitalTemplate.mjs'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 import express from 'express'
