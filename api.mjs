@@ -10,8 +10,24 @@ import consultantRoute from './routes/medicationsConsRoute.mjs'
 const ORIGIN_URL = process.env.ORIGIN_URL
 
 const app = express();
-app.use(cors({ origin: ORIGIN_URL }));
-app.options('*', cors())
+
+const allowedOrigins = {
+  development: 'http://localhost:5173',
+  production: 'https://access-jsongenerator-1.onrender.com'
+}
+
+const environment = process.env.NODE_ENV || 'development';
+
+console.log(environment)
+
+const corsOptions = {
+  origin: allowedOrigins[environment],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}
+
+app.use(cors(corsOptions));
+//app.options('*', cors())
 
 /**
  * Declare routes
