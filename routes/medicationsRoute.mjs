@@ -21,6 +21,7 @@ router.get('/medications', async (req, res) => {
           f.name === 'drugName' || 
           f.name === 'units' ||
           f.name === 'drugnameunit' ||
+          f.name === 'drugroute' ||
           f.name === 'rate' || 
           f.name === 'route' || 
           f.name === 'medicationType16' || 
@@ -45,6 +46,8 @@ router.get('/medications', async (req, res) => {
         infObj['units'] = obj.answer
       } if (obj.name == 'drugnameunit') {
         infObj['drugnameunit'] = obj.answer
+      } if (obj.name == 'drugroute') {
+        infObj['drugAndRoute'] = obj.answer
       } if (obj.name == 'rate') {
         infObj['rate'] = obj.answer
       } if (obj.name == 'route') {
@@ -67,6 +70,13 @@ router.get('/medications', async (req, res) => {
         infObj['otherInformation'] = obj.answer
       }
     })
+
+
+    if (drugType == 'Bolus') {
+      infObj['drugAndMethod'] = `${infObj.drugName} - Bolus`
+    } else if (drugType == 'Infusion') {
+      infObj['drugAndMethod'] = `${infObj.drugName} - Infusion`
+    } 
 
     if (drugType == 'cds' && infObj.controlledDrug == 'Yes') {
       outputBuilder.push(infObj)

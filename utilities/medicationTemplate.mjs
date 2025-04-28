@@ -11,7 +11,8 @@ const medicationTemplate = {
   "medicationTypeStr": null,
   "controlledDrug": null,
   "units": null,
-  "drugnameunit": null 
+  "drugnameunit": null,
+  "drugAndRoute": null
 }
 
 export default medicationTemplate
