@@ -14,7 +14,7 @@ router.get("/staff", async (req, res) => {
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
   
   const staffSubmissionsArray = submissions.map(person => {
-    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess' || f.name === 'registrationNumber' || f.name === 'phoneNumber')
+    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsnetEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess' || f.name === 'registrationNumber' || f.name === 'phoneNumber')
   })
 
   let outputBuilder = []
@@ -26,7 +26,7 @@ router.get("/staff", async (req, res) => {
     subArray.forEach(obj => {
       if (obj.name == 'name') {
         personObj['name'] = obj.prettyFormat
-      } if (obj.name == 'nhsEmail') {
+      } if (obj.name == 'nhsnetEmail') {
         personObj['email'] = obj.answer
       } if (obj.name == 'jobRole') {
         personObj['jobRole'] = obj.prettyFormat
@@ -46,6 +46,8 @@ router.get("/staff", async (req, res) => {
     })
     outputBuilder.push(personObj)
   })
+
+  console.log(outputBuilder)
 
   const activeUsers = outputBuilder.filter(person => person.activeAccess === '1').map(person => {
     return {

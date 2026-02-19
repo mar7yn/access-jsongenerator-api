@@ -30,11 +30,12 @@ router.get('/hospitals', async (req, res) => {
         f.name === 'postCode' || 
         f.name === 'switchboardNumber' || 
         f.name === 'specialistPathways' ||
+        f.name === 'redPhone' ||
         f.name === 'howToContact' ||
         f.name === 'howToContactDescr' ||
         f.name === 'reportingNhs' ||
         f.name === 'floorCoordinatorcritical' ||
-        f.name === 'auditNurse53' ||
+        f.name === 'auditNurseContact' ||
         f.name === 'describePrealertCardiac' ||
         f.name === 'describePrealertNeuro' ||
         f.name === 'describePrealertTrauma' ||
