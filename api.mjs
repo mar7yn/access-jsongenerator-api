@@ -6,6 +6,7 @@ import staffRoute from './routes/staffRoute.mjs'
 import medicationsRoute from './routes/medicationsRoute.mjs'
 import hospitalsRoute from './routes/hospitalsRoute.mjs'
 import consultantRoute from './routes/medicationsConsRoute.mjs'
+import equipmentRoute from './routes/equipmentRoute.mjs'
 
 const ORIGIN_URL = process.env.ORIGIN_URL
 
@@ -36,6 +37,7 @@ app.use('/api', staffRoute)
 app.use('/api', medicationsRoute)
 app.use('/api', hospitalsRoute)
 app.use('/api', consultantRoute)
+app.use('/api', equipmentRoute)
 
 jotform.options({
   apiKey: process.env.JOTFORM_API,

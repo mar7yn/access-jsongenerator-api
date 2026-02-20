@@ -1,0 +1,454 @@
+{
+  "LIST": [
+    {
+      "assetName": "OTHER",
+      "serialNumber": null,
+      "serviceDate": null
+    },
+    {
+      "assetNumber": "67728",
+      "deviceName": "Link 4 (Pump stack)"
+    },
+    {
+      "assetNumber": "328994",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2026",
+        "datetime": "2026-12-01 00:00:00"
+      },
+      "deviceName": "Link 4 (Pump stack)"
+    },
+    {
+      "assetNumber": "330040",
+      "deviceName": "Beurer PO 45 (Pulse Oximeter)"
+    },
+    {
+      "assetNumber": "330063",
+      "deviceName": "Beurer PO 45 (Pulse Oximeter)"
+    },
+    {
+      "assetNumber": "143887",
+      "deviceName": "Beurer PO 45 (Pulse Oximeter)"
+    },
+    {
+      "serviceDate": {
+        "day": "01",
+        "month": "01",
+        "year": "2026",
+        "datetime": "2026-01-01 00:00:00"
+      },
+      "deviceName": "Mequ"
+    },
+    {
+      "assetNumber": "326639",
+      "deviceName": "Mequ"
+    },
+    {
+      "assetNumber": "326641",
+      "serviceDate": {
+        "day": "01",
+        "month": "01",
+        "year": "2026",
+        "datetime": "2026-01-01 00:00:00"
+      },
+      "deviceName": "Mequ"
+    },
+    {
+      "assetNumber": "139210",
+      "deviceName": "Mcgrath VIDEO LARYNGOSCOPE"
+    },
+    {
+      "assetNumber": "330064",
+      "deviceName": "Mcgrath VIDEO LARYNGOSCOPE"
+    },
+    {
+      "assetNumber": "330037",
+      "deviceName": "Mcgrath VIDEO LARYNGOSCOPE"
+    },
+    {
+      "assetNumber": "326622",
+      "serviceDate": {
+        "day": "01",
+        "month": "11",
+        "year": "2025",
+        "datetime": "2025-11-01 00:00:00"
+      },
+      "deviceName": "Corpuls"
+    },
+    {
+      "assetNumber": "329057",
+      "serviceDate": {
+        "day": "01",
+        "month": "02",
+        "year": "2026",
+        "datetime": "2026-02-01 00:00:00"
+      },
+      "deviceName": "Laerdal Compact Suction Unit 4"
+    },
+    {
+      "assetNumber": "328121",
+      "serviceDate": {
+        "day": "01",
+        "month": "05",
+        "year": "2026",
+        "datetime": "2026-05-01 00:00:00"
+      },
+      "deviceName": "Laerdal Compact Suction Unit 4"
+    },
+    {
+      "assetNumber": "328303",
+      "serviceDate": {
+        "day": "01",
+        "month": "08",
+        "year": "2026",
+        "datetime": "2026-08-01 00:00:00"
+      },
+      "deviceName": "Laerdal Compact Suction Unit 4"
+    },
+    {
+      "assetNumber": "324671",
+      "serviceDate": {
+        "day": "01",
+        "month": "05",
+        "year": "2026",
+        "datetime": "2026-05-01 00:00:00"
+      },
+      "deviceName": "Laerdal Suction Unit"
+    },
+    {
+      "assetNumber": "324672",
+      "serviceDate": {
+        "day": "01",
+        "month": "01",
+        "year": "2026",
+        "datetime": "2026-01-01 00:00:00"
+      },
+      "deviceName": "Laerdal Suction Unit"
+    },
+    {
+      "assetNumber": "329126",
+      "serviceDate": {
+        "day": "01",
+        "month": "08",
+        "year": "2029",
+        "datetime": "2029-08-01 00:00:00"
+      },
+      "deviceName": "TYMPANIC THERMOMETER"
+    },
+    {
+      "assetNumber": "329106",
+      "serviceDate": {
+        "day": "01",
+        "month": "08",
+        "year": "2025",
+        "datetime": "2025-08-01 00:00:00"
+      },
+      "deviceName": "TYMPANIC THERMOMETER"
+    },
+    {
+      "assetNumber": "328200",
+      "serviceDate": {
+        "day": "01",
+        "month": "01",
+        "year": "2026",
+        "datetime": "2026-01-01 00:00:00"
+      },
+      "deviceName": "TYMPANIC THERMOMETER"
+    },
+    {
+      "assetNumber": "3228127",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2025",
+        "datetime": "2025-12-01 00:00:00"
+      },
+      "deviceName": "Link6+ (Pump stack)"
+    },
+    {
+      "assetNumber": "328996",
+      "serviceDate": {
+        "day": "01",
+        "month": "08",
+        "year": "2025",
+        "datetime": "2025-08-01 00:00:00"
+      },
+      "deviceName": "Link6+ (Pump stack)"
+    },
+    {
+      "assetNumber": "329889",
+      "serviceDate": {
+        "day": "01",
+        "month": "05",
+        "year": "2027",
+        "datetime": "2027-05-01 00:00:00"
+      },
+      "deviceName": "Link 4 (Pump stack)"
+    },
+    {
+      "assetNumber": "67710",
+      "serviceDate": {
+        "day": "01",
+        "month": "09",
+        "year": "2027",
+        "datetime": "2027-09-01 00:00:00"
+      },
+      "deviceName": "Link 4 (Pump stack)"
+    },
+    {
+      "assetNumber": "329998",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2026",
+        "datetime": "2026-12-01 00:00:00"
+      },
+      "deviceName": "Link 4 (Pump stack)"
+    },
+    {
+      "assetNumber": "326642",
+      "serviceDate": {
+        "day": "01",
+        "month": "09",
+        "year": "2026",
+        "datetime": "2026-09-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "67767",
+      "serviceDate": {
+        "day": "01",
+        "month": "03",
+        "year": "2026",
+        "datetime": "2026-03-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "322543",
+      "serviceDate": {
+        "day": "01",
+        "month": "02",
+        "year": "2026",
+        "datetime": "2026-02-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326640",
+      "serviceDate": {
+        "day": "01",
+        "month": "03",
+        "year": "2026",
+        "datetime": "2026-03-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "323275",
+      "serviceDate": {
+        "day": "01",
+        "month": "04",
+        "year": "2026",
+        "datetime": "2026-04-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326629",
+      "serviceDate": {
+        "day": "01",
+        "month": "04",
+        "year": "2026",
+        "datetime": "2026-04-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "323274",
+      "serviceDate": {
+        "day": "01",
+        "month": "04",
+        "year": "2026",
+        "datetime": "2026-04-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "323272",
+      "serviceDate": {
+        "day": "01",
+        "month": "04",
+        "year": "2026",
+        "datetime": "2026-04-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326925",
+      "serviceDate": {
+        "day": "01",
+        "month": "02",
+        "year": "2027",
+        "datetime": "2027-02-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326651",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2026",
+        "datetime": "2026-12-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "324389",
+      "serviceDate": {
+        "day": "01",
+        "month": "05",
+        "year": "2028",
+        "datetime": "2028-05-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326649",
+      "serviceDate": {
+        "day": "01",
+        "month": "03",
+        "year": "2026",
+        "datetime": "2026-03-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326635",
+      "serviceDate": {
+        "day": "01",
+        "month": "03",
+        "year": "2026",
+        "datetime": "2026-03-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "323273",
+      "serviceDate": {
+        "day": "01",
+        "month": "05",
+        "year": "2026",
+        "datetime": "2026-05-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326616",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2026",
+        "datetime": "2026-12-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326617",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2026",
+        "datetime": "2026-12-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326646",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2026",
+        "datetime": "2026-12-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "326650",
+      "serviceDate": {
+        "day": "01",
+        "month": "12",
+        "year": "2026",
+        "datetime": "2026-12-01 00:00:00"
+      },
+      "deviceName": "Injectomat MC Connect (Syringe Driver)"
+    },
+    {
+      "assetNumber": "324617",
+      "serviceDate": {
+        "day": "01",
+        "month": "06",
+        "year": "2026",
+        "datetime": "2026-06-01 00:00:00"
+      },
+      "deviceName": "Hamilton T1"
+    },
+    {
+      "assetNumber": "324613",
+      "serviceDate": {
+        "day": "01",
+        "month": "09",
+        "year": "2026",
+        "datetime": "2026-09-01 00:00:00"
+      },
+      "deviceName": "Hamilton T1"
+    },
+    {
+      "assetNumber": "324162",
+      "deviceName": "Hamilton T1"
+    },
+    {
+      "assetNumber": "326644",
+      "serviceDate": {
+        "day": "01",
+        "month": "09",
+        "year": "2026",
+        "datetime": "2026-09-01 00:00:00"
+      },
+      "deviceName": "Hamilton T1"
+    },
+    {
+      "assetNumber": "324606",
+      "serviceDate": {
+        "day": "01",
+        "month": "05",
+        "year": "2026",
+        "datetime": "2026-05-01 00:00:00"
+      },
+      "deviceName": "Hamilton T1"
+    },
+    {
+      "assetNumber": "326618",
+      "serviceDate": {
+        "day": "01",
+        "month": "04",
+        "year": "2026",
+        "datetime": "2026-04-01 00:00:00"
+      },
+      "deviceName": "Hamilton T1"
+    },
+    {
+      "assetNumber": "322440",
+      "serviceDate": {
+        "day": "01",
+        "month": "02",
+        "year": "2026",
+        "datetime": "2026-02-01 00:00:00"
+      },
+      "deviceName": "Hamilton T1"
+    }
+  ]
+}

@@ -69,7 +69,7 @@ router.get("/staff", async (req, res) => {
       return
     }
     console.log("File successfully written")
-  }).then(response => {
+  }).then(res => {
     res.sendFile(filePath, (err) => {
       if (err) {
         return res.status(500).send("Could not send the file: ", err.message)
