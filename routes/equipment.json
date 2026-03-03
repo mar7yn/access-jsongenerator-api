@@ -1,454 +1,848 @@
 {
-  "LIST": [
-    {
-      "assetName": "OTHER",
-      "serialNumber": null,
-      "serviceDate": null
-    },
-    {
-      "assetNumber": "67728",
-      "deviceName": "Link 4 (Pump stack)"
-    },
-    {
-      "assetNumber": "328994",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2026",
-        "datetime": "2026-12-01 00:00:00"
+  "Equipment": {
+    "Vacuum Mattress": [
+      {
+        "Device": "Vacuum Mattress",
+        "Name": "5",
+        "Asset_no": "5",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Link 4 (Pump stack)"
-    },
-    {
-      "assetNumber": "330040",
-      "deviceName": "Beurer PO 45 (Pulse Oximeter)"
-    },
-    {
-      "assetNumber": "330063",
-      "deviceName": "Beurer PO 45 (Pulse Oximeter)"
-    },
-    {
-      "assetNumber": "143887",
-      "deviceName": "Beurer PO 45 (Pulse Oximeter)"
-    },
-    {
-      "serviceDate": {
-        "day": "01",
-        "month": "01",
-        "year": "2026",
-        "datetime": "2026-01-01 00:00:00"
+      {
+        "Device": "Vacuum Mattress",
+        "Name": "4",
+        "Asset_no": "4",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Mequ"
-    },
-    {
-      "assetNumber": "326639",
-      "deviceName": "Mequ"
-    },
-    {
-      "assetNumber": "326641",
-      "serviceDate": {
-        "day": "01",
-        "month": "01",
-        "year": "2026",
-        "datetime": "2026-01-01 00:00:00"
+      {
+        "Device": "Vacuum Mattress",
+        "Name": "3",
+        "Asset_no": "3",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Mequ"
-    },
-    {
-      "assetNumber": "139210",
-      "deviceName": "Mcgrath VIDEO LARYNGOSCOPE"
-    },
-    {
-      "assetNumber": "330064",
-      "deviceName": "Mcgrath VIDEO LARYNGOSCOPE"
-    },
-    {
-      "assetNumber": "330037",
-      "deviceName": "Mcgrath VIDEO LARYNGOSCOPE"
-    },
-    {
-      "assetNumber": "326622",
-      "serviceDate": {
-        "day": "01",
-        "month": "11",
-        "year": "2025",
-        "datetime": "2025-11-01 00:00:00"
+      {
+        "Device": "Vacuum Mattress",
+        "Name": "2",
+        "Asset_no": "2",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Corpuls"
-    },
-    {
-      "assetNumber": "329057",
-      "serviceDate": {
-        "day": "01",
-        "month": "02",
-        "year": "2026",
-        "datetime": "2026-02-01 00:00:00"
+      {
+        "Device": "Vacuum Mattress",
+        "Name": "1",
+        "Asset_no": "1",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      }
+    ],
+    "Red Bag": [
+      {
+        "Device": "Red Bag",
+        "Name": "10",
+        "Asset_no": "10",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Laerdal Compact Suction Unit 4"
-    },
-    {
-      "assetNumber": "328121",
-      "serviceDate": {
-        "day": "01",
-        "month": "05",
-        "year": "2026",
-        "datetime": "2026-05-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "9",
+        "Asset_no": "9",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Laerdal Compact Suction Unit 4"
-    },
-    {
-      "assetNumber": "328303",
-      "serviceDate": {
-        "day": "01",
-        "month": "08",
-        "year": "2026",
-        "datetime": "2026-08-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "8",
+        "Asset_no": "8",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Laerdal Compact Suction Unit 4"
-    },
-    {
-      "assetNumber": "324671",
-      "serviceDate": {
-        "day": "01",
-        "month": "05",
-        "year": "2026",
-        "datetime": "2026-05-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "7",
+        "Asset_no": "7",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Laerdal Suction Unit"
-    },
-    {
-      "assetNumber": "324672",
-      "serviceDate": {
-        "day": "01",
-        "month": "01",
-        "year": "2026",
-        "datetime": "2026-01-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "6",
+        "Asset_no": "6",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Laerdal Suction Unit"
-    },
-    {
-      "assetNumber": "329126",
-      "serviceDate": {
-        "day": "01",
-        "month": "08",
-        "year": "2029",
-        "datetime": "2029-08-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "5",
+        "Asset_no": "5",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "TYMPANIC THERMOMETER"
-    },
-    {
-      "assetNumber": "329106",
-      "serviceDate": {
-        "day": "01",
-        "month": "08",
-        "year": "2025",
-        "datetime": "2025-08-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "4",
+        "Asset_no": "4",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "TYMPANIC THERMOMETER"
-    },
-    {
-      "assetNumber": "328200",
-      "serviceDate": {
-        "day": "01",
-        "month": "01",
-        "year": "2026",
-        "datetime": "2026-01-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "3",
+        "Asset_no": "3",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "TYMPANIC THERMOMETER"
-    },
-    {
-      "assetNumber": "3228127",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2025",
-        "datetime": "2025-12-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "2",
+        "Asset_no": "2",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Link6+ (Pump stack)"
-    },
-    {
-      "assetNumber": "328996",
-      "serviceDate": {
-        "day": "01",
-        "month": "08",
-        "year": "2025",
-        "datetime": "2025-08-01 00:00:00"
+      {
+        "Device": "Red Bag",
+        "Name": "1",
+        "Asset_no": "1",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      }
+    ],
+    "Drug Bag": [
+      {
+        "Device": "Drug Bag",
+        "Name": "10",
+        "Asset_no": "10",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Link6+ (Pump stack)"
-    },
-    {
-      "assetNumber": "329889",
-      "serviceDate": {
-        "day": "01",
-        "month": "05",
-        "year": "2027",
-        "datetime": "2027-05-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "9",
+        "Asset_no": "9",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Link 4 (Pump stack)"
-    },
-    {
-      "assetNumber": "67710",
-      "serviceDate": {
-        "day": "01",
-        "month": "09",
-        "year": "2027",
-        "datetime": "2027-09-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "8",
+        "Asset_no": "8",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Link 4 (Pump stack)"
-    },
-    {
-      "assetNumber": "329998",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2026",
-        "datetime": "2026-12-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "7",
+        "Asset_no": "7",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Link 4 (Pump stack)"
-    },
-    {
-      "assetNumber": "326642",
-      "serviceDate": {
-        "day": "01",
-        "month": "09",
-        "year": "2026",
-        "datetime": "2026-09-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "6",
+        "Asset_no": "6",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "67767",
-      "serviceDate": {
-        "day": "01",
-        "month": "03",
-        "year": "2026",
-        "datetime": "2026-03-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "5",
+        "Asset_no": "5",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "322543",
-      "serviceDate": {
-        "day": "01",
-        "month": "02",
-        "year": "2026",
-        "datetime": "2026-02-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "4",
+        "Asset_no": "4",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326640",
-      "serviceDate": {
-        "day": "01",
-        "month": "03",
-        "year": "2026",
-        "datetime": "2026-03-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "3",
+        "Asset_no": "3",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "323275",
-      "serviceDate": {
-        "day": "01",
-        "month": "04",
-        "year": "2026",
-        "datetime": "2026-04-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "2",
+        "Asset_no": "2",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326629",
-      "serviceDate": {
-        "day": "01",
-        "month": "04",
-        "year": "2026",
-        "datetime": "2026-04-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "1",
+        "Asset_no": "1",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "323274",
-      "serviceDate": {
-        "day": "01",
-        "month": "04",
-        "year": "2026",
-        "datetime": "2026-04-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "",
+        "Asset_no": "2",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "323272",
-      "serviceDate": {
-        "day": "01",
-        "month": "04",
-        "year": "2026",
-        "datetime": "2026-04-01 00:00:00"
+      {
+        "Device": "Drug Bag",
+        "Name": "",
+        "Asset_no": "1",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      }
+    ],
+    "Blue Bag": [
+      {
+        "Device": "Blue Bag",
+        "Name": "10",
+        "Asset_no": "10",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326925",
-      "serviceDate": {
-        "day": "01",
-        "month": "02",
-        "year": "2027",
-        "datetime": "2027-02-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "9",
+        "Asset_no": "9",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326651",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2026",
-        "datetime": "2026-12-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "8",
+        "Asset_no": "8",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "324389",
-      "serviceDate": {
-        "day": "01",
-        "month": "05",
-        "year": "2028",
-        "datetime": "2028-05-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "7",
+        "Asset_no": "7",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326649",
-      "serviceDate": {
-        "day": "01",
-        "month": "03",
-        "year": "2026",
-        "datetime": "2026-03-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "6",
+        "Asset_no": "6",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326635",
-      "serviceDate": {
-        "day": "01",
-        "month": "03",
-        "year": "2026",
-        "datetime": "2026-03-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "5",
+        "Asset_no": "5",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "323273",
-      "serviceDate": {
-        "day": "01",
-        "month": "05",
-        "year": "2026",
-        "datetime": "2026-05-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "4",
+        "Asset_no": "4",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326616",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2026",
-        "datetime": "2026-12-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "3",
+        "Asset_no": "3",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326617",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2026",
-        "datetime": "2026-12-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "2",
+        "Asset_no": "2",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326646",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2026",
-        "datetime": "2026-12-01 00:00:00"
+      {
+        "Device": "Blue Bag",
+        "Name": "1",
+        "Asset_no": "1",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      }
+    ],
+    "Link 4 (Pump stack)": [
+      {
+        "Device": "Link 4 (Pump stack)",
+        "Name": "",
+        "Asset_no": "67728",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "326650",
-      "serviceDate": {
-        "day": "01",
-        "month": "12",
-        "year": "2026",
-        "datetime": "2026-12-01 00:00:00"
+      {
+        "Device": "Link 4 (Pump stack)",
+        "Name": "",
+        "Asset_no": "328994",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2026",
+          "datetime": "2026-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
       },
-      "deviceName": "Injectomat MC Connect (Syringe Driver)"
-    },
-    {
-      "assetNumber": "324617",
-      "serviceDate": {
-        "day": "01",
-        "month": "06",
-        "year": "2026",
-        "datetime": "2026-06-01 00:00:00"
+      {
+        "Device": "Link 4 (Pump stack)",
+        "Name": "",
+        "Asset_no": "329889",
+        "Service_date": {
+          "day": "01",
+          "month": "05",
+          "year": "2027",
+          "datetime": "2027-05-01 00:00:00"
+        },
+        "Owner": "ACCESS"
       },
-      "deviceName": "Hamilton T1"
-    },
-    {
-      "assetNumber": "324613",
-      "serviceDate": {
-        "day": "01",
-        "month": "09",
-        "year": "2026",
-        "datetime": "2026-09-01 00:00:00"
+      {
+        "Device": "Link 4 (Pump stack)",
+        "Name": "",
+        "Asset_no": "67710",
+        "Service_date": {
+          "day": "01",
+          "month": "09",
+          "year": "2027",
+          "datetime": "2027-09-01 00:00:00"
+        },
+        "Owner": "ACCESS"
       },
-      "deviceName": "Hamilton T1"
-    },
-    {
-      "assetNumber": "324162",
-      "deviceName": "Hamilton T1"
-    },
-    {
-      "assetNumber": "326644",
-      "serviceDate": {
-        "day": "01",
-        "month": "09",
-        "year": "2026",
-        "datetime": "2026-09-01 00:00:00"
+      {
+        "Device": "Link 4 (Pump stack)",
+        "Name": "",
+        "Asset_no": "329998",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2026",
+          "datetime": "2026-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "Beurer PO 45 (Pulse Oximeter)": [
+      {
+        "Device": "Beurer PO 45 (Pulse Oximeter)",
+        "Name": "",
+        "Asset_no": "330040",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Hamilton T1"
-    },
-    {
-      "assetNumber": "324606",
-      "serviceDate": {
-        "day": "01",
-        "month": "05",
-        "year": "2026",
-        "datetime": "2026-05-01 00:00:00"
+      {
+        "Device": "Beurer PO 45 (Pulse Oximeter)",
+        "Name": "",
+        "Asset_no": "330063",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Hamilton T1"
-    },
-    {
-      "assetNumber": "326618",
-      "serviceDate": {
-        "day": "01",
-        "month": "04",
-        "year": "2026",
-        "datetime": "2026-04-01 00:00:00"
+      {
+        "Device": "Beurer PO 45 (Pulse Oximeter)",
+        "Name": "",
+        "Asset_no": "143887",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      }
+    ],
+    "Mequ": [
+      {
+        "Device": "Mequ",
+        "Name": "",
+        "Asset_no": "",
+        "Service_date": {
+          "day": "01",
+          "month": "01",
+          "year": "2026",
+          "datetime": "2026-01-01 00:00:00"
+        },
+        "Owner": "ACCESS"
       },
-      "deviceName": "Hamilton T1"
-    },
-    {
-      "assetNumber": "322440",
-      "serviceDate": {
-        "day": "01",
-        "month": "02",
-        "year": "2026",
-        "datetime": "2026-02-01 00:00:00"
+      {
+        "Device": "Mequ",
+        "Name": "",
+        "Asset_no": "326639",
+        "Service_date": "",
+        "Owner": "ACCESS"
       },
-      "deviceName": "Hamilton T1"
-    }
-  ]
+      {
+        "Device": "Mequ",
+        "Name": "",
+        "Asset_no": "326641",
+        "Service_date": {
+          "day": "01",
+          "month": "01",
+          "year": "2026",
+          "datetime": "2026-01-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "Mcgrath VIDEO LARYNGOSCOPE": [
+      {
+        "Device": "Mcgrath VIDEO LARYNGOSCOPE",
+        "Name": "",
+        "Asset_no": "139210",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Mcgrath VIDEO LARYNGOSCOPE",
+        "Name": "",
+        "Asset_no": "330064",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Mcgrath VIDEO LARYNGOSCOPE",
+        "Name": "",
+        "Asset_no": "330037",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      }
+    ],
+    "Corpuls": [
+      {
+        "Device": "Corpuls",
+        "Name": "",
+        "Asset_no": "326622",
+        "Service_date": {
+          "day": "01",
+          "month": "11",
+          "year": "2025",
+          "datetime": "2025-11-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "Laerdal Compact Suction Unit 4": [
+      {
+        "Device": "Laerdal Compact Suction Unit 4",
+        "Name": "",
+        "Asset_no": "329057",
+        "Service_date": {
+          "day": "01",
+          "month": "02",
+          "year": "2026",
+          "datetime": "2026-02-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Laerdal Compact Suction Unit 4",
+        "Name": "",
+        "Asset_no": "328121",
+        "Service_date": {
+          "day": "01",
+          "month": "05",
+          "year": "2026",
+          "datetime": "2026-05-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Laerdal Compact Suction Unit 4",
+        "Name": "",
+        "Asset_no": "328303",
+        "Service_date": {
+          "day": "01",
+          "month": "08",
+          "year": "2026",
+          "datetime": "2026-08-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "Laerdal Suction Unit": [
+      {
+        "Device": "Laerdal Suction Unit",
+        "Name": "",
+        "Asset_no": "324671",
+        "Service_date": {
+          "day": "01",
+          "month": "05",
+          "year": "2026",
+          "datetime": "2026-05-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Laerdal Suction Unit",
+        "Name": "",
+        "Asset_no": "324672",
+        "Service_date": {
+          "day": "01",
+          "month": "01",
+          "year": "2026",
+          "datetime": "2026-01-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "TYMPANIC THERMOMETER": [
+      {
+        "Device": "TYMPANIC THERMOMETER",
+        "Name": "",
+        "Asset_no": "329126",
+        "Service_date": {
+          "day": "01",
+          "month": "08",
+          "year": "2029",
+          "datetime": "2029-08-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "TYMPANIC THERMOMETER",
+        "Name": "",
+        "Asset_no": "329106",
+        "Service_date": {
+          "day": "01",
+          "month": "08",
+          "year": "2025",
+          "datetime": "2025-08-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "TYMPANIC THERMOMETER",
+        "Name": "",
+        "Asset_no": "328200",
+        "Service_date": {
+          "day": "01",
+          "month": "01",
+          "year": "2026",
+          "datetime": "2026-01-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "Link6+ (Pump stack)": [
+      {
+        "Device": "Link6+ (Pump stack)",
+        "Name": "",
+        "Asset_no": "3228127",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2025",
+          "datetime": "2025-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Link6+ (Pump stack)",
+        "Name": "",
+        "Asset_no": "328996",
+        "Service_date": {
+          "day": "01",
+          "month": "08",
+          "year": "2025",
+          "datetime": "2025-08-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "Injectomat MC Connect (Syringe Driver)": [
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326642",
+        "Service_date": {
+          "day": "01",
+          "month": "09",
+          "year": "2026",
+          "datetime": "2026-09-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "67767",
+        "Service_date": {
+          "day": "01",
+          "month": "03",
+          "year": "2026",
+          "datetime": "2026-03-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "322543",
+        "Service_date": {
+          "day": "01",
+          "month": "02",
+          "year": "2026",
+          "datetime": "2026-02-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326640",
+        "Service_date": {
+          "day": "01",
+          "month": "03",
+          "year": "2026",
+          "datetime": "2026-03-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "323275",
+        "Service_date": {
+          "day": "01",
+          "month": "04",
+          "year": "2026",
+          "datetime": "2026-04-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326629",
+        "Service_date": {
+          "day": "01",
+          "month": "04",
+          "year": "2026",
+          "datetime": "2026-04-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "323274",
+        "Service_date": {
+          "day": "01",
+          "month": "04",
+          "year": "2026",
+          "datetime": "2026-04-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "323272",
+        "Service_date": {
+          "day": "01",
+          "month": "04",
+          "year": "2026",
+          "datetime": "2026-04-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326925",
+        "Service_date": {
+          "day": "01",
+          "month": "02",
+          "year": "2027",
+          "datetime": "2027-02-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326651",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2026",
+          "datetime": "2026-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "324389",
+        "Service_date": {
+          "day": "01",
+          "month": "05",
+          "year": "2028",
+          "datetime": "2028-05-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326649",
+        "Service_date": {
+          "day": "01",
+          "month": "03",
+          "year": "2026",
+          "datetime": "2026-03-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326635",
+        "Service_date": {
+          "day": "01",
+          "month": "03",
+          "year": "2026",
+          "datetime": "2026-03-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "323273",
+        "Service_date": {
+          "day": "01",
+          "month": "05",
+          "year": "2026",
+          "datetime": "2026-05-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326616",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2026",
+          "datetime": "2026-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326617",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2026",
+          "datetime": "2026-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326646",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2026",
+          "datetime": "2026-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Injectomat MC Connect (Syringe Driver)",
+        "Name": "",
+        "Asset_no": "326650",
+        "Service_date": {
+          "day": "01",
+          "month": "12",
+          "year": "2026",
+          "datetime": "2026-12-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ],
+    "Hamilton T1": [
+      {
+        "Device": "Hamilton T1",
+        "Name": "",
+        "Asset_no": "324617",
+        "Service_date": {
+          "day": "01",
+          "month": "06",
+          "year": "2026",
+          "datetime": "2026-06-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Hamilton T1",
+        "Name": "",
+        "Asset_no": "324613",
+        "Service_date": {
+          "day": "01",
+          "month": "09",
+          "year": "2026",
+          "datetime": "2026-09-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Hamilton T1",
+        "Name": "",
+        "Asset_no": "324162",
+        "Service_date": "",
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Hamilton T1",
+        "Name": "",
+        "Asset_no": "326644",
+        "Service_date": {
+          "day": "01",
+          "month": "09",
+          "year": "2026",
+          "datetime": "2026-09-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Hamilton T1",
+        "Name": "",
+        "Asset_no": "324606",
+        "Service_date": {
+          "day": "01",
+          "month": "05",
+          "year": "2026",
+          "datetime": "2026-05-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Hamilton T1",
+        "Name": "",
+        "Asset_no": "326618",
+        "Service_date": {
+          "day": "01",
+          "month": "04",
+          "year": "2026",
+          "datetime": "2026-04-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      },
+      {
+        "Device": "Hamilton T1",
+        "Name": "",
+        "Asset_no": "322440",
+        "Service_date": {
+          "day": "01",
+          "month": "02",
+          "year": "2026",
+          "datetime": "2026-02-01 00:00:00"
+        },
+        "Owner": "ACCESS"
+      }
+    ]
+  }
 }
