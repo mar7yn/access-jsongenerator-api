@@ -14,13 +14,13 @@ router.get("/staff", async (req, res) => {
   const submissions = await jotform.getFormSubmissions(staffForm.id, { limit:1000 });
   
   const staffSubmissionsArray = submissions.map(person => {
-    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsnetEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess' || f.name === 'registrationNumber' || f.name === 'phoneNumber')
+    return Object.values(person.answers).filter(f =>  f.name === 'name' || f.name === 'nhsnetEmail' || f.name === 'jobRole' || f.name === 'nokName' || f.name === 'nokNumber' || f.name === 'activeAccess' || f.name === 'registrationNumber' || f.name === 'phoneNumber' || f.name === 'dateOf' || f.name === 'mask' || f.name === 'uploadYour')
   })
 
   let outputBuilder = []
 
   //TODO all staff members are built whether they are active or not. Should the active check be done first?
-
+  console.log(staffSubmissionsArray)
   staffSubmissionsArray.forEach(subArray => {
     let personObj = {}
     subArray.forEach(obj => {
@@ -40,14 +40,17 @@ router.get("/staff", async (req, res) => {
         personObj['activeAccess'] = obj.answer
       } if (obj.name == 'phoneNumber') {
         personObj['phoneNumber'] = obj.answer
-      } if (obj.name === 'registrationNumber') {
-        personObj['registrationNumber'] = obj.answer
+      } if (obj.name == 'dateOf') {
+        personObj['dateOf'] = obj.answer
+      } if (obj.name == 'mask') {
+        personObj['mask'] = obj.answer
+      } if (obj.name == 'uploadYour') {
+        personObj['uploadYour'] = obj.answer
       }
     })
     outputBuilder.push(personObj)
   })
 
-  console.log(outputBuilder)
 
   const activeUsers = outputBuilder.filter(person => person.activeAccess === '1').map(person => {
     return {
@@ -57,30 +60,30 @@ router.get("/staff", async (req, res) => {
       nokName: person.nokName,
       jobRole: person.jobRole,
       nokNumber: person.nokNumber,
-      phoneNumber: person.phoneNumber
+      phoneNumber: person.phoneNumber,
+      dateOf: person.dateOf,
+      mask: person.mask,
+      uploadYour: person.uploadYour 
     }
   })
 
-  const filePath = path.join(__dirname, "staff.json")
+    const filePath = path.join(__dirname, "staff.json")
 
-  await writeFile(filePath, JSON.stringify({ "LIST" : [staffTemplate, ...activeUsers] }), (err) => {
-    if (err) {
-      console.log("Error writing file: ", err)
-      return
-    }
+  try {
+    await writeFile(filePath, JSON.stringify({ "LIST": [staffTemplate, ...activeUsers] }))
     console.log("File successfully written")
-  }).then(res => {
+
     res.sendFile(filePath, (err) => {
       if (err) {
-        return res.status(500).send("Could not send the file: ", err.message)
-      } else {
-        console.log("File successfully sent...")
-        return res.status(200).end()
+        console.log("Could not send the file:", err.message)
+        return res.status(500).send("Could not send the file")
       }
+      console.log("File successfully sent...")
     })
-  }).catch(err => {
+  } catch (err) {
     console.log('Something went wrong...', err)
-  })
+    res.status(500).send("Something went wrong")
+  }
 })
 
 export default router

@@ -5,7 +5,10 @@ const staffTemplate = {
   "nokName": null,
   "jobRole": null,
   "nokNumber": null,
-  "phoneNumber": null
+  "phoneNumber": null,
+  "dateOf": null,
+  "mask": null,
+  "uploadYour": null
 }
 
 export default staffTemplate
